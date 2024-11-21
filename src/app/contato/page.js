@@ -7,8 +7,6 @@ import "./css/contato.css"
 
 export default function Contato() {
     return (
-      
-  
       <div className={styles.container}>
         <Navbar />
         <div className="body">
@@ -21,6 +19,8 @@ export default function Contato() {
             <input type="email" id="email" name="email" required />
             <label htmlFor="phone">Telefone:</label>
             <input type="number" id="phone" name="phone" required />
+            <label htmlFor="feedback">Coloque sua dúvida ou Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
             <button type="submit" className ="btn">
               Enviar
             </button>
